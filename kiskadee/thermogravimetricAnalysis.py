@@ -161,7 +161,7 @@ class TGA(DataLoader):
         else:
             raise ValueError('Select a valid filter!')
         
-    def smootDataFull(self,            
+    def smoothDataFull(self,            
             window: int = 20,
             order: int = 2,
             column: str = 'dtg',
