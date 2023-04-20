@@ -27,7 +27,6 @@ class Kinetics():
     # for further fwo calculation
     # May transform for KAS use
     def _fwo(self, alpha_min=0.1, alpha_max=0.8, alpha_spacing=0.1, alpha_array=None):
-    
         # Accept an array with correspondent alpha sequence or calculate based on configuration
         if alpha_array is None:
             # multiply 10 and divide to avoid floating point error
@@ -41,10 +40,8 @@ class Kinetics():
         data = self.data
         result = []
         alpha_result = []
-
         # Iterate over alpha and heating rate range to build a matrix with necessary values
         for alpha in alpha_range:
-
             for hr in self.heating_rates:
                 id = data[hr][data[hr]['alpha'] < alpha]['index'].idxmax()
                 temperature = data[hr].iloc[id]['temperature_k']
@@ -59,7 +56,7 @@ class Kinetics():
 
     # Main FWO calculation
     def FWO(self, alpha_min=0.1, alpha_max=0.8, alpha_spacing=0.1, alpha_array=None):
-        
+
         _fwo, _alpha_range = self._fwo(
             alpha_min=alpha_min,
             alpha_max=alpha_max,
