@@ -5,3 +5,6 @@ __pychache__
 dist
 build
 venv
+
+examples/
+
