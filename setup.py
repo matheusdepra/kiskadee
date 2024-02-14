@@ -3,14 +3,14 @@ from setuptools import setup
 setup(
   name = 'kiskadee',       
   packages = ['kiskadee'],  
-  version = '0.0.1',      
+  version = '0.0.2',      
   license='MIT',        
   description = 'Kinetics Degradation Module',  
   long_description='Kinetics Degradation Module',  
   author = 'Matheus de Prá Andrade',              
   author_email = 'mpandrade@ucs.br',    
   url = 'https://github.com/matheusdepra/kiskadee',  
-  download_url = 'https://github.com/aitec-mp/krakatoa/archive/refs/tags/0.0.5post5.tar.gz',    
+  download_url = 'https://github.com/matheusdepra/kiskadee/archive/refs/tags/0.0.2.tar.gz',    
   keywords = ['kiskadee', 'fwo'],  
   install_requires=[],
   classifiers=[
@@ -23,5 +23,6 @@ setup(
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
   ],
 )
